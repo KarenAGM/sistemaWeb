@@ -1,11 +1,10 @@
 
 require('cors');
-import express from 'express';
-import morgan from 'morgan';
-import path from 'path';
-import user from './models/user';
-import products from './models/products';
-
+const express = require('express');
+const morgan = require('morgan');
+const path = require('path');
+const user = require('./models/user');
+const products = require('./models/products')
 
 const db = require ('./database');
 
