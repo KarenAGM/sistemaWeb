@@ -5,9 +5,7 @@ const morgan = require('morgan');
 const path = require('path');
 const user = require('./models/user');
 const products = require('./models/products')
-
 const db = require ('./database');
-
 
 const app = express();
 
@@ -31,7 +29,6 @@ app.get("/api/products",async(req,res) => {
 
 
 app.post('/api/signup',async(req,res)=>{
-    //console.log(req.body);
     const {
         name,email,password
     } = req.body;
